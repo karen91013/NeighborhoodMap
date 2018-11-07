@@ -13,7 +13,7 @@ export default class Pin extends React.Component {
 
   render(){
     return(
-        <Marker position={this.props.location.location} onClick={e => this.props.setMarker(this.props.id)}>
+        <Marker position={this.props.location.location} onClick={e => this.props.setMarker(this.props.id)} animation={this.props.openMarker === this.props.id? window.google.maps.Animation.BOUNCE: null}>
           { this.props.openMarker === this.props.id ?
             <InfoWindow maxWidth={800} defaultPosition={ this.props.location.location } onCloseClick={e=>this.props.setMarker(null)}>
               <div>

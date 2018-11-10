@@ -1,6 +1,28 @@
-# NeighborhoodMap
-Built a single page application to show different prominent parks around the United States, their location and weather details at each location. Implemented two third-party APIs to provide additional information about each of these locations.
+# Neighborhood Map
+This a project completed in React for Udacity's Front-End Web Developer Nanodegree course. I built a single page application to show different prominent parks around the United States, their location and weather details at each location. Implemented two third-party APIs to provide additional information about each of these locations.
 
-APIs used:
-- Google Maps API
-- Dark Sky API
+# To Start
+To get started:
+
+* Install all project dependencies with `npm install`
+* Start the development server with `npm start`
+
+# Contributing
+* This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+* APIs used: Google Maps API, Dark Sky API
+
+# Service Worker
+Service worker is not needed for this application. I have created a project with create-react-app and thus it is invoked by default. 
+
+To test in production: 
+* Open terminal
+* Type 'npm run build'
+* Type 'serve build'
+
+
+# ARIA Roles & Tabindex
+* Tabbing through the site with the keyboard will select each different city.
+* The search filter has a role of "Search Input".
+* The unordered lists have a role of "Location".
+* The map has a role of "Map".
+

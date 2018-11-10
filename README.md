@@ -21,4 +21,8 @@ To test in production:
 
 
 # ARIA Roles & Tabindex
-Tabbing through the site with the keyboard will select each different city.
+* Tabbing through the site with the keyboard will select each different city.
+* The search filter has a role of "Search Input".
+* The unordered lists have a role of "Location".
+* The map has a role of "Map".
+

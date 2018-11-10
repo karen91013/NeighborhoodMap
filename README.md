@@ -10,3 +10,15 @@ To get started:
 # Contributing
 * This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 * APIs used: Google Maps API, Dark Sky API
+
+# Service Worker
+Service worker is not needed for this application. I have created a project with create-react-app and thus it is invoked by default. 
+
+To test in production: 
+* Open terminal
+* type 'npm run build'
+* type 'serve build'
+
+
+# ARIA Roles
+Tabbing through the site with the keyboard will select each different city. Pressing enter with the keyboard will show more details about the park at each location.

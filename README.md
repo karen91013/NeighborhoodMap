@@ -1,5 +1,5 @@
 # Neighborhood Map
-This a project completed in React for Udacity's Front-End Web Developmer Nanodegree course. I built a single page application to show different prominent parks around the United States, their location and weather details at each location. Implemented two third-party APIs to provide additional information about each of these locations.
+This a project completed in React for Udacity's Front-End Web Developer Nanodegree course. I built a single page application to show different prominent parks around the United States, their location and weather details at each location. Implemented two third-party APIs to provide additional information about each of these locations.
 
 # To Start
 To get started:

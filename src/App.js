@@ -18,21 +18,31 @@ export default class App extends Component {
   }
 
   componentDidMount(){
-
+    let x=0;
     for(let index in this.state.locations){
       let lat=this.state.locations[index].location.lat
       let lng= this.state.locations[index].location.lng
       let classCopy= this.state.locations
       fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/DARKSKYAPIKEY/${lat},${lng}?exclude=[minutely,daily,alerts,flags,hourly]`)
-        .then(resp=>resp.json())
+        .then(resp=>{
+          if (!resp.ok){ throw resp.statusText}
+          return resp.json()
+        })
         .then(data => {
-          classCopy[index].weather = data.currently
-          this.setState({
-            locations: classCopy
-          })
+            classCopy[index].weather = data.currently
+            this.setState({
+              locations: classCopy
+            })
+        })
+        .catch(err =>{
+          if (x<1){
+            alert(`There was an issue connecting to the DarkSky API: ${err}`);
+          }
+          x++
         })
     }
   }
+
   render() {
 
     return (

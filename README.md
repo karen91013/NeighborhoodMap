@@ -4,8 +4,8 @@ This a project completed in React for Udacity's Front-End Web Developmer Nanodeg
 # To Start
 To get started:
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+* Install all project dependencies with `npm install`
+* Start the development server with `npm start`
 
 # Contributing
 * This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
@@ -16,9 +16,9 @@ Service worker is not needed for this application. I have created a project with
 
 To test in production: 
 * Open terminal
-* type 'npm run build'
-* type 'serve build'
+* Type 'npm run build'
+* Type 'serve build'
 
 
-# ARIA Roles
-Tabbing through the site with the keyboard will select each different city. Pressing enter with the keyboard will show more details about the park at each location.
+# ARIA Roles & Tabindex
+Tabbing through the site with the keyboard will select each different city.
